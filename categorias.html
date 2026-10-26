@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Categorías | Cuaderno</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="categorias.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Cuaderno</a>
+    <nav aria-label="Navegación principal">
+      <a href="notas.html">Notas</a>
+      <a href="categorias.html" aria-current="page">Categorías</a>
+      <a href="landing-pages/index.html">Otras páginas</a>
+    </nav>
+  </header>
+  <main class="page narrow-page">
+    <h1>Categorías</h1>
+    <p>Organiza las notas con nombres simples.</p>
+    <section class="panel">
+      <form id="category-form" class="simple-form">
+        <label for="category-name">Nueva categoría</label>
+        <div class="form-actions">
+          <input id="category-name" name="nombre" maxlength="80" placeholder="Por ejemplo: Trabajo" required>
+          <button type="submit">Crear</button>
+        </div>
+      </form>
+    </section>
+    <p id="status" role="status" aria-live="polite"></p>
+    <h2>Mis categorías</h2>
+    <div id="categories" class="category-list"><p class="empty">Cargando categorías...</p></div>
+  </main>
+</body>
+</html>

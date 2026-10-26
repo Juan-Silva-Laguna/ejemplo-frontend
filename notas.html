@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notas | Cuaderno</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Cuaderno</a>
+    <nav aria-label="Navegación principal">
+      <a href="notas.html" aria-current="page">Notas</a>
+      <a href="categorias.html">Categorías</a>
+      <a href="landing-pages/index.html">Otras páginas</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>Notas</h1>
+    <div class="columns">
+      <section>
+        <label for="search">Buscar notas</label>
+        <input type="search" id="search" placeholder="Título o contenido">
+        <p id="note-count" class="muted"></p>
+        <p id="status" role="status" aria-live="polite"></p>
+        <div id="notes" class="notes-grid"><p class="empty">Cargando notas...</p></div>
+      </section>
+      <section class="panel" aria-labelledby="editor-title">
+        <h2 id="editor-title">Nueva nota</h2>
+        <form id="note-form">
+          <label for="title">Título</label>
+          <input id="title" name="titulo" maxlength="150" placeholder="Una idea para recordar" required>
+          <label for="note-category">Categoría</label>
+          <select id="note-category" name="categoria_id">
+            <option value="">Sin categoría</option>
+          </select>
+          <label for="content">Contenido</label>
+          <textarea id="content" name="contenido" rows="7" placeholder="Escribe tu nota..."></textarea>
+          <div class="form-actions">
+            <button type="submit" id="save-note">Guardar nota</button>
+            <button type="button" class="secondary" id="cancel-edit" hidden>Cancelar</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
