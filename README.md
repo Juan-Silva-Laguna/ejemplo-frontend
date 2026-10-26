@@ -52,7 +52,7 @@ Ejemplo de destino: `https://notas-api-ejemplo.us-central1.run.app/api/:path*`. 
 
 Esta configuracion conserva rutas como `/api/notas/12` y permite que las solicitudes de crear, editar y borrar lleguen al backend. No es una redireccion del navegador ni una funcion que tengas que programar.
 
-**Estado actual:** el archivo `vercel.json` todavia no esta incluido en esta carpeta; debes crearlo y confirmar su URL antes del primer despliegue. Este README no cambia automaticamente el codigo ni crea la configuracion.
+**Estado actual:** esta carpeta incluye `vercel.json` con destino a `https://prueba.hostless.app`. El nombre debe ser exactamente `vercel.json` (no `vecerl.json`), y la raiz del proyecto en Vercel debe apuntar a esta carpeta. Si cambia la URL del backend, actualiza el destino y vuelve a desplegar.
 
 ## 4. Publicar el repositorio Git
 
